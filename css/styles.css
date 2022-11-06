@@ -473,7 +473,7 @@ ul {
 
 /* footer */
 
-.contacts-data {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-background-color);
@@ -491,12 +491,12 @@ ul {
   margin-top: 26px;
   font-style: normal;
 }
-.data .data-item + .data-item {
+.address-data .address-data-item + .address-data-item {
   display: block;
   margin-top: 9px;
 }
 
-.data-map,
+.footer-map,
 .contacts {
   font-size: 14px;
   line-height: 1.71;
@@ -512,7 +512,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.data-link {
+.address-data-link {
   color: var(--second-text-color);
 }
 .social-title {

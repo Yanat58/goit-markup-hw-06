@@ -60,6 +60,7 @@ ul {
 .link,
 .portfolio-link {
   text-decoration: none;
+
   transition: color 250ms var(--animation-function);
 }
 
@@ -68,6 +69,7 @@ ul {
 .nav-link.current {
   color: var(--accent-color);
 }
+
 .img {
   display: block;
   max-width: 100%;
@@ -90,6 +92,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+
 .nav-link.current::after {
   position: absolute;
   content: '';
@@ -156,12 +159,14 @@ ul {
 .contacts-link:focus {
   color: var(--accent-color);
 }
+
 .contacts-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
 /* hero overlay */
+
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -186,7 +191,9 @@ ul {
   text-align: center;
   margin: 0 auto;
 }
+
 /* hero h1 */
+
 .hero-title {
   margin-bottom: 30px;
 
@@ -199,6 +206,7 @@ ul {
 }
 
 /* button */
+
 .button-basic {
   display: inline-block;
   padding: 10px 32px;
@@ -226,6 +234,7 @@ ul {
   background-color: var(--button-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 /* modal window */
 
 .backdrop {
@@ -239,6 +248,7 @@ ul {
 
   transition: opacity 250ms var(--animation-function);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -280,11 +290,12 @@ ul {
   position: relative;
   display: block;
   margin-bottom: 10px;
+  color: var(--title-text-color);
 }
 
 .modal-form-field:focus-within > .modal-form-icon,
 .modal-form-field:hover > .modal-form-icon {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .modal-form-field:focus-within > input,
@@ -308,12 +319,17 @@ ul {
   padding-bottom: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border 250ms var(--animation-function);
 }
+
 .modal-form-icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
-  fill: var(--title-text-color);
+  fill: currentColor;
+
+  transition: color 250ms var(--animation-function);
 }
 
 .modal-form-comment {
@@ -328,6 +344,8 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+
+  transition: border 250ms var(--animation-function);
 }
 
 .modal-form-field:focus-within > textarea,
@@ -405,13 +423,11 @@ textarea:focus-visible {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 
-  transition: background-color 250ms var(--animation-function) box-shadow 250ms
-    var(--animation-function);
+  transition: background-color 250ms var(--animation-function);
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--button-hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-close-btn {
@@ -427,12 +443,13 @@ textarea:focus-visible {
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--accent-color);
 
-  transition: fill 250ms var(--animation-function);
+  transition: color 250ms var(--animation-function);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* особливості */
@@ -737,11 +754,11 @@ textarea:focus-visible {
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  transition: border 250ms var(--animation-function);
+
+  transition: border 250ms var(--animation-function) box-shadow 250ms
+    var(--animation-function);
 }
 
-/* .footer-newsletter-form:hover> input,
-.footer-newsletter-form:focus-within> input { */
 .footer-newsletter input:hover,
 .footer-newsletter input:focus-within {
   border: 1px solid rgba(33, 150, 243, 0.3);
@@ -753,6 +770,9 @@ textarea:focus-visible {
   margin-left: 12px;
   padding-left: 28px;
   padding-right: 62px;
+
+  transition: background-color 250ms var(--animation-function) box-shadow 250ms
+    var(--animation-function);
 }
 
 .footer-newsletter-btn:hover,
@@ -828,6 +848,7 @@ textarea:focus-visible {
 .portfolio-link {
   display: block;
   position: relative;
+
   transition: box-shadow 250ms var(--animation-function);
 }
 

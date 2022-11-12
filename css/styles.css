@@ -380,7 +380,7 @@ textarea:focus-visible {
 }
 .checkbox-label {
   display: block;
-  margin-left: 24px;
+  margin-left: 8px;
   margin-right: 8px;
 }
 .checkbox-part-text {
@@ -389,18 +389,17 @@ textarea:focus-visible {
 }
 
 .icon-checkbox {
-  position: absolute;
-  display: inline-block;
-  margin-right: 8px;
+  display: block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
+  background-image: url(../images/icon-unceck.svg);
+
+
 }
 
 .checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
-  background-image: url('../images/icon-check\ .svg');
+  background-image: url(../images/icon-check\ .svg);
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
